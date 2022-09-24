@@ -1,0 +1,1 @@
+ yo conozco c-sharp por eso en algunos casos hice algunos ejercicios de Algoritmos por que me parecio mas facil asi , tanto asi tambien en pilas por que hice la carrera en UTN y desarrollaron el tema eintenté algunos con Java script para seguir la sugerencia aunq no pude con todos por falta de tiempo 

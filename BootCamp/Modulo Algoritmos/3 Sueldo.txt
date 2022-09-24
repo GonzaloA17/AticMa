@@ -1,0 +1,42 @@
+Realizado con C Sharp
+
+
+
+namespace Sueldo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+	
+	    //CREO todas las variables y a valorHora ya le asigno por defecto uno
+            int valorHora = 30;
+            int totalSueldo = 0;
+            Console.WriteLine("Ingrese Nombre: ");
+            string nom = Console.ReadLine();
+            Console.WriteLine("Ingrese Antiguedad: ");
+            int ant = int.Parse(Console.ReadLine());
+            Console.WriteLine("Cantidad de Hs. Trabajadas en el mes: ");
+            int horas = int.Parse(Console.ReadLine());
+
+            
+	    //Creo una sentencia para determinar la antiguedad si es mayor o menor a 10
+            if(ant >= 10)
+            {
+                int resultado = 0;
+                resultado = ant * 30;
+
+                totalSueldo = (horas * valorHora) + resultado;
+
+            }
+            else
+            {
+                totalSueldo = horas * valorHora;
+            }
+
+	    //Resultados
+            Console.WriteLine($"El emplado" + (nom) + "Tiene una antiguedad de " + (ant));
+            Console.WriteLine("Tiene un sueldo de : " + totalSueldo);
+        }
+    }
+}

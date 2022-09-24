@@ -1,0 +1,12 @@
+void BorrarValor(Lista L,int n)
+{
+  int aux;
+  Posicion p;
+
+  for(p=PrimeroLista(L);p!=FinLista(L);){
+    Recuperar(&aux,p,L);
+    if (aux==n)
+      BorrarElemento(p,L);
+    else p=Siguiente(p,L);
+  }
+}

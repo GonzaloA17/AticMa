@@ -1,0 +1,54 @@
+Realizado con C Sharp
+
+
+static void Main(string[] args)
+        {
+            int aleatorio;
+            int introducido;	
+	    
+	    //hago tipo juego donde tengo 10 chances 
+            int restantes = 10;
+	
+	    //genero el random
+            Random generador = new Random();	
+	    
+	    //inicio una variable random, la genero y coloco un rango 
+            aleatorio = generador.Next(1, 1001);
+
+		
+	    //hago un do while para seguir introduciendo numeros donde me indica si es mayor o menor
+	    //y si llego a las 10 oportunidades sale del ciclo     
+            do
+            {
+                Console.WriteLine("Intentos restantes " + restantes);
+                Console.Write("Tira un numero: ");
+                introducido = int.Parse(Console.ReadLine());
+                if(introducido > aleatorio)
+                {
+                    Console.WriteLine("Es Menor");
+                }
+
+                if (introducido < aleatorio)
+                {
+                    Console.WriteLine("Es Mayor");
+                }
+
+                restantes--;
+
+            } while ((introducido != aleatorio) && (restantes > 0));
+
+	    //muestro los resultados y si no el numero correcto que era
+
+            if(introducido == aleatorio)
+            {
+                Console.WriteLine("Adivinaste!!!");
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("No acertaste, El numero  " +aleatorio+ "  era");
+                Console.ReadKey();
+            }
+            
+            
+        }

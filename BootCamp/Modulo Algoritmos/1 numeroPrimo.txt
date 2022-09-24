@@ -1,0 +1,23 @@
+var num = 0;
+System.out.println("Introduce un numero");
+num = sc.nextInt(); //lee un entero por teclado
+
+
+//creo una funcion con un for determinar si es par o impar
+//si es par no es primo y si da impar es primo
+function esPrimo(num){
+    for (var i = 2; i < num; i++) {
+        if (num%i==0){
+            return false;
+        }
+    };
+    return true;
+}
+
+//muestro por pantalla
+if(esPrimo == true){
+    System.out.println("El numero"+num+"es primo");
+
+}else{
+    System.out.println("El numero"+num+"no es primo");
+}

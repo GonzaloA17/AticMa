@@ -1,0 +1,29 @@
+Ejercicio de Arbol
+
+1. A
+2. E-N-P y E-N-Q
+3. No
+4. J - C - A
+5. E - A
+6. Ninguno
+7. H - L - M - P - Q
+8. 3
+9. Altura = 4
+10. Profundidad 1
+11. E
+12. NO. 
+13. NO
+14. No
+15. Izquierda : F - I , Derecha : N
+16. 4 (B-C-D-E)
+17. 
+
+Pre Orden : raiz izquierdo . derecha
+A - B- F- G- H - C - I - J - K - L - M- D- E- N- P- Q
+
+Post Orden:
+H - G - F - B - I - L - M - K - J - C - D - P - Q - N -E -A
+
+in Orden
+
+G - F - H - B- I -L - C - A- K- J-D-M-P-E-N-Q
